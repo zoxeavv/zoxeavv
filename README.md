@@ -49,6 +49,12 @@ I ship fast across adjacent problems — sales infra, enrichment, video, interna
 | **[Scalezia](https://github.com/zoxeavv/scalezia-app)** | Slack-native bot unifying a company's tools into one queryable memory | Template |
 | **[Kiwi](https://github.com/zoxeavv/kiwi)** | Video-prospecting SaaS prototype | Paused |
 
+### 🔒 Selected private work
+
+Some of the work I'm proudest of lives in private repos — happy to walk through any of it.
+
+- **DevFactory** — a proof-first development factory for AI coding agents. It turns signals into scoped work, runs agents through durable skills and loops, and gates every output with fresh-evidence verification before a claim is trusted. This is the harness that lets me ship Shot solo, at speed, without breaking things.
+
 ### 🛠 Stack I live in
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
