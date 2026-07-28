@@ -39,7 +39,8 @@ jobs:
               --color-calendar-graph-day-L3-bg: #26a641 !important;
               --color-calendar-graph-day-L4-bg: #39d353 !important;
             }
-            svg {
+            .items-wrapper {
+              min-height: 100%;
               background: #0d1117 !important;
               color: #8b949e !important;
             }
