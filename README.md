@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/shot-signal.png" alt="A live signal becoming a precise coaching insight" width="100%" />
+<img src="./assets/creation-hands.png" alt="The Creation of Adam — two hands reaching toward each other" width="100%" />
 
 # Gauthier Girault
 
