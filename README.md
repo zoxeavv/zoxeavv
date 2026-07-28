@@ -4,7 +4,7 @@
 
 # Gauthier Girault
 
-### I build AI systems that act while the conversation is still happening.
+### I build AI systems — and the factories that build them.
 
 Founder & solo engineer at **[Shot](https://github.com/zoxeavv/shot)** · Paris → San Francisco
 
@@ -32,13 +32,27 @@ Founder & solo engineer at **[Shot](https://github.com/zoxeavv/shot)** · Paris 
 
 Shot is the system I want to build for the next decade. The source is private; the [public project brief](https://github.com/zoxeavv/shot) documents the product and architecture.
 
-## Proof, not pitch
+## AI-native, end to end
 
-| Signal | What shipped |
+I use Claude, Cursor, Codex, Supastarter, and specialized agents as an engineering team.
+The interesting part is not pretending the code was typed alone. It is designing the system,
+giving agents the right context, setting the constraints, and proving the result.
+
+```text
+signal → context → plan → agents → gates → evidence → shipped system
+```
+
+That operating model is becoming **DevFactory Core**: a proof-first orchestration layer
+with reusable skills, durable loops, bounded workers, model routing, and evidence gates.
+A clean public core is in preparation.
+
+## Public proof
+
+| System | What it proves |
 |---|---|
-| **150K–190K / month** | Verified B2B emails from an autonomous enrichment engine running on **~€48/month** of infrastructure — [email-pipeline](https://github.com/zoxeavv/email-pipeline) |
-| **83K LOC** | A full competitive-intelligence SaaS with adaptive scraping and 11 asynchronous workers — [Closer Claw](https://github.com/zoxeavv/Closer-Claw) |
-| **896 tests** | A video-prospecting product with generation queues, billing, analytics, and org-scoped access — [Kiwi](https://github.com/zoxeavv/kiwi) |
+| **[email-pipeline](https://github.com/zoxeavv/email-pipeline)** | A focused, cache-aware enrichment pipeline built to turn expensive external calls into a repeatable data system |
+| **[Closer Claw](https://github.com/zoxeavv/Closer-Claw)** | A full competitive-intelligence SaaS: adaptive scraping, background workers, AI analysis, billing, and multi-tenant product infrastructure |
+| **[Shot](https://github.com/zoxeavv/shot)** | Product thesis and architecture for real-time AI coaching; the production source remains private |
 
 ## Selected systems
 
@@ -47,7 +61,7 @@ Shot is the system I want to build for the next decade. The source is private; t
 | **[Shot](https://github.com/zoxeavv/shot)** | Real-time AI coaching for B2B sales teams | **Building now** · source private |
 | **[email-pipeline](https://github.com/zoxeavv/email-pipeline)** | Autonomous, cache-aware B2B email enrichment | Live |
 | **[Closer Claw](https://github.com/zoxeavv/Closer-Claw)** | Competitive intelligence with selectors that survive DOM changes | Archived after the pivot |
-| **[Kiwi](https://github.com/zoxeavv/kiwi)** | Personalized video prospecting at scale | Paused |
+| **DevFactory Core** | Proof-first development factory for AI coding agents | Sanitizing for public release |
 
 ## How I build
 
