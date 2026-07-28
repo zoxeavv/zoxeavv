@@ -1,78 +1,69 @@
 <div align="center">
 
+<img src="./assets/shot-signal.png" alt="A live signal becoming a precise coaching insight" width="100%" />
+
 # Gauthier Girault
 
-### Real-time AI that coaches sales reps mid-call — live on their screen, invisible to the prospect.
+### I build AI systems that act while the conversation is still happening.
 
-Solo engineer, end-to-end. Building **[Shot](https://github.com/zoxeavv/shot)** with my co-founder Clément (sales).
-Paris, relocating to San Francisco.
+Founder & solo engineer at **[Shot](https://github.com/zoxeavv/shot)** · Paris → San Francisco
 
-<br/>
-
-![Founder](https://img.shields.io/badge/Founder-Solo_Engineer-111111?style=for-the-badge)
-![Focus](https://img.shields.io/badge/Currently-Shot-6E56CF?style=for-the-badge)
-![Location](https://img.shields.io/badge/Paris-San_Francisco-111111?style=for-the-badge)
-
-[![X](https://img.shields.io/badge/@gauthiergirlt-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/gauthiergirlt)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thier0811@gmail.com)
+[![X](https://img.shields.io/badge/@gauthiergirlt-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/gauthiergirlt)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:thier0811@gmail.com)
+[![Building](https://img.shields.io/badge/building-Shot-7C3AED?style=flat-square)](https://github.com/zoxeavv/shot)
 
 </div>
 
----
+## Now: Shot
 
-### 🎯 What I'm building — Shot
+> A real-time coaching layer for B2B sales calls. The rep gets the next best move on screen; the prospect never sees the software.
 
-A coaching layer that lives on top of every B2B sales call. The rep sees the next best move in real time; the prospect never knows it's there.
+- **Live context** — CRM, email, past calls, and the VP Sales playbook become useful during the conversation, not after it.
+- **Invisible overlay** — protected from screen sharing across Zoom, Google Meet, Microsoft Teams, Loom, and OBS.
+- **Latency as product** — Recall.ai → Gladia ASR → Anthropic streaming, engineered toward a sub-2s p95 response.
+- **A learning loop** — manager corrections become governed rules that improve the next call for every rep.
 
-- **Invisible overlay** — Electron `BrowserWindow.setContentProtection(true)` over macOS `NSWindowSharingNone` + Windows `WDA_EXCLUDEFROMCAPTURE`. Coaching shows on the rep's screen and is stripped from screen share.
-- **Real-time audio pipeline** — Recall.ai → Gladia ASR → Anthropic Haiku 4.5 streaming, targeting **sub-2s p95** from word spoken to coaching shown.
-- **Unified memory** — CRM, Gmail, Slack, Notion, calendar and call transcripts ingested into one semantic layer with identity resolution.
-- **Closed feedback loop** — every Monday the VP Sales corrects 3–5 key call moments; corrections become structured rules with a strict lifecycle and auto-apply to every rep's next call. Adapted from [Karpathy's `autoresearch`](https://github.com/karpathy/autoresearch).
+Shot is the system I want to build for the next decade. The source is private; the [public project brief](https://github.com/zoxeavv/shot) documents the product and architecture.
 
-### 📈 Proof of execution
+## Proof, not pitch
 
-| | |
+| Signal | What shipped |
 |---|---|
-| **< 2s p95** | latency from word spoken to coaching surfaced, on live calls |
-| **150K–190K** | verified B2B emails per month, running on **~€48/mo** of infra |
-| **83K LOC** | shipped solo on a full competitive-intelligence SaaS before the pivot |
+| **150K–190K / month** | Verified B2B emails from an autonomous enrichment engine running on **~€48/month** of infrastructure — [email-pipeline](https://github.com/zoxeavv/email-pipeline) |
+| **83K LOC** | A full competitive-intelligence SaaS with adaptive scraping and 11 asynchronous workers — [Closer Claw](https://github.com/zoxeavv/Closer-Claw) |
+| **896 tests** | A video-prospecting product with generation queues, billing, analytics, and org-scoped access — [Kiwi](https://github.com/zoxeavv/kiwi) |
 
-I ship fast across adjacent problems — sales infra, enrichment, video, internal tooling — to converge on the one I want to live in for the next 10 years. **Shot is it.** Everything else is archived or on maintenance.
+## Selected systems
 
-### 🚀 Shipped
-
-| Project | What it is | Status |
+| Project | System | Status |
 |---|---|---|
-| **[Shot](https://github.com/zoxeavv/shot)** | Real-time AI coaching for B2B sales teams | 🟣 Current focus · source private |
-| **[Closer Claw](https://github.com/zoxeavv/Closer-Claw)** | Competitive-intelligence SaaS — adaptive selectors that survive DOM changes (Scrapling + 11 BullMQ workers + Claude), 83K LOC | Archived after pivoting to Shot |
-| **[email-pipeline](https://github.com/zoxeavv/email-pipeline)** | Autonomous 24/7 B2B email enrichment engine at scale | 🟢 Live |
-| **[Scalezia](https://github.com/zoxeavv/scalezia-app)** | Slack-native bot unifying a company's tools into one queryable memory | Template |
-| **[Kiwi](https://github.com/zoxeavv/kiwi)** | Video-prospecting SaaS prototype | Paused |
+| **[Shot](https://github.com/zoxeavv/shot)** | Real-time AI coaching for B2B sales teams | **Building now** · source private |
+| **[email-pipeline](https://github.com/zoxeavv/email-pipeline)** | Autonomous, cache-aware B2B email enrichment | Live |
+| **[Closer Claw](https://github.com/zoxeavv/Closer-Claw)** | Competitive intelligence with selectors that survive DOM changes | Archived after the pivot |
+| **[Kiwi](https://github.com/zoxeavv/kiwi)** | Personalized video prospecting at scale | Paused |
 
-### 🔒 Selected private work
+## How I build
 
-Some of the work I'm proudest of lives in private repos — happy to walk through any of it.
+```text
+signal → context → decision → action → measured feedback → better rule
+```
 
-- **DevFactory** — a proof-first development factory for AI coding agents. It turns signals into scoped work, runs agents through durable skills and loops, and gates every output with fresh-evidence verification before a claim is trusted. This is the harness that lets me ship Shot solo, at speed, without breaking things.
-
-### 🛠 Stack I live in
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Postgres](https://img.shields.io/badge/Postgres_+_pgvector-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-![Anthropic](https://img.shields.io/badge/Anthropic-D97757?style=flat-square&logo=anthropic&logoColor=white)
-![Vercel AI SDK](https://img.shields.io/badge/Vercel_AI_SDK-000000?style=flat-square&logo=vercel&logoColor=white)
-![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
-![Composio](https://img.shields.io/badge/Composio-6366F1?style=flat-square)
-![Recall.ai](https://img.shields.io/badge/Recall.ai-111111?style=flat-square)
-![Gladia](https://img.shields.io/badge/Gladia-111111?style=flat-square)
+I work end-to-end: product, distributed systems, AI pipelines, desktop software, data, and deployment. My bias is toward short feedback loops, explicit failure modes, and evidence before claims.
 
 <div align="center">
-<br/>
 
-**Building in public-ish.** Reach out if you're working on real-time AI, sales tooling, or you run an incubator — I'm relocating to SF and always up for a conversation.
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Postgres](https://img.shields.io/badge/Postgres_+_pgvector-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
+![Anthropic](https://img.shields.io/badge/Anthropic-D97757?style=flat-square&logo=anthropic&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+---
+
+**Working on real-time AI, sales systems, or an SF incubator?**<br>
+[Talk to me on X](https://x.com/gauthiergirlt) · [Send me an email](mailto:thier0811@gmail.com)
 
 </div>
