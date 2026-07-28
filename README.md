@@ -16,11 +16,8 @@ Founder & solo engineer at **[Shot](https://github.com/zoxeavv/shot)** · Paris 
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./github-metrics-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./github-metrics-light.svg">
-  <img src="./github-metrics-light.svg" alt="GitHub activity dashboard for Gauthier Girault" width="100%">
-</picture>
+<img src="./github-metrics-dark.svg#gh-dark-mode-only" alt="GitHub activity dashboard for Gauthier Girault — dark theme" width="100%">
+<img src="./github-metrics-light.svg#gh-light-mode-only" alt="GitHub activity dashboard for Gauthier Girault — light theme" width="100%">
 
 </div>
 
