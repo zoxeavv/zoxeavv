@@ -30,6 +30,32 @@ jobs:
           config_timezone: Europe/Paris
           config_twemoji: yes
           config_order: base.header, isocalendar, languages, repositories, base.activity+community
+          extras_css: |
+            :root {
+              --color-calendar-graph-day-bg: #161b22 !important;
+              --color-calendar-graph-day-border: rgba(240, 246, 252, 0.08) !important;
+              --color-calendar-graph-day-L1-bg: #0e4429 !important;
+              --color-calendar-graph-day-L2-bg: #006d32 !important;
+              --color-calendar-graph-day-L3-bg: #26a641 !important;
+              --color-calendar-graph-day-L4-bg: #39d353 !important;
+            }
+            svg {
+              background: #0d1117 !important;
+              color: #8b949e !important;
+            }
+            h1, h2, h3 {
+              color: #58a6ff !important;
+            }
+            .field, .repository .description, .repository .infos,
+            .repository .name span:last-child, footer {
+              color: #8b949e !important;
+            }
+            .field svg {
+              fill: #8b949e !important;
+            }
+            .repository .name span:first-child {
+              color: #58a6ff !important;
+            }
           output_action: commit
           committer_branch: main
           committer_message: "chore: refresh GitHub metrics"
