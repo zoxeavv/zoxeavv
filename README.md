@@ -14,6 +14,12 @@ Founder & solo engineer at **[Shot](https://github.com/zoxeavv/shot)** · Paris 
 
 </div>
 
+<div align="center">
+
+<img src="./github-metrics.svg" alt="GitHub activity dashboard for Gauthier Girault" width="100%" />
+
+</div>
+
 ## Now: Shot
 
 > A real-time coaching layer for B2B sales calls. The rep gets the next best move on screen; the prospect never sees the software.
